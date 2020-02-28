@@ -1,0 +1,21 @@
+/* pages/welcome/welcome.wxss */
+.wel{
+  width: 100%;
+  overflow: hidden;
+}
+.wel-img{
+  width: 100%;
+  position: absolute;
+}
+.wel-button{
+  /* margin-left: 40% !important;
+  width: 400rpx !important; */
+  background-color:#4e75c2;
+  border-radius: 20px;
+  width: 620rpx !important;
+  font-size: 40rpx;
+  padding: 26rpx 48rpx;
+  height: 106rpx;
+  margin-top: 140%;
+  position: relative
+}

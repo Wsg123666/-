@@ -1,0 +1,5 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="wel">
+  <image class="wel-img" src="../../asserts/welcome/welcome.jpg" mode="widthFix"></image>
+  <button  class="wel-button" bind:tap="handclick">立即使用</button>
+</view>

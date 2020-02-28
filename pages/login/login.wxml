@@ -1,0 +1,10 @@
+<!--pages/login/login.wxml-->
+<view class="login-forever">
+  <image src="../../asserts/login/login.png" class="login-image"></image>
+</view>
+<view class="login-main">
+<view>
+<text>学校:</text>
+<button bind:tap="selectSchool"><input placeholder="请选择学校" disabled></input></button>
+</view>
+</view>
