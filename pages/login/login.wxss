@@ -1,4 +1,64 @@
 /* pages/login/login.wxss */
-.login-image{
-  width: 100%;
+.select-form{
+  text-align: center;
+}
+.select-school{
+  display: flex;
+  justify-content:center;
+  /* border: #eee solid 3px; */
+  margin-top: 150rpx; 
+  margin-bottom: 50rpx;
+}
+
+.select-text{
+  width: 180rpx;
+  height: 60rpx;
+  margin-top: 9rpx;
+  text-align: center;
+  margin-left: 60rpx;
+  border-radius: 20rpx;
+  padding-left: 8rpx;
+  line-height: 40rpx;
+  padding-top: 18rpx;
+  margin-bottom: 9rpx;
+  background-color: #cbdbfd;
+}
+.select-button{
+  padding: 24rpx 48rpx;
+  font-size: 16px;
+  border-radius: 20rpx;
+}
+.select-id{
+  display: flex;
+  margin-bottom: 20rpx;
+  /* border: #eee solid 3px; */
+  justify-content:center;
+}
+.select-occup{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2;
+  justify-content:center;
+  margin-top: 160rpx;
+  margin-right: auto;
+  margin-left: auto;
+}
+.select-input{
+  border-radius: 20rpx;
+  height: 90rpx;
+  width: 360rpx;
+  padding-bottom: 6rpx;
+  line-height: 46rpx;
+  margin-bottom: 60rpx;
+  margin-left: auto;
+  background-color: #f8f8f8;
+  margin-right: auto;
+}
+.submit button{
+  margin-top: 20%;
+  border-radius: 20px;
+  width: 620rpx !important;
+  font-size: 40rpx;
+  padding: 26rpx 48rpx;
+  height: 106rpx;
 }

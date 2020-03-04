@@ -1,10 +1,47 @@
 <!--pages/login/login.wxml-->
-<view class="login-forever">
-  <image src="../../asserts/login/login.png" class="login-image"></image>
-</view>
-<view class="login-main">
-<view>
-<text>学校:</text>
-<button bind:tap="selectSchool"><input placeholder="请选择学校" disabled></input></button>
-</view>
-</view>
+<form class="select-form" bindsubmit="formSubmit">
+  <view class="select-school">
+    <text class="select-text">学校:</text>
+    <button class="select-button">
+    <picker class="picker" bindchange="changevalue" bindcolumnchange="columnchange" mode="multiSelector" value="{     {multiIndex}}" range="{{multiArray}}">
+      <input  placeholder="请选择你的学校" name="school" disabled value="{{multiArray[1][multiIndex[1]]}}"></input>
+    </picker>
+    </button>
+  </view>
+  <view >
+    <view class="select-id">
+      <text class="select-text">身份:</text>
+      <button class="select-button" bind:tap="selectOccupation">
+        <input  placeholder="点击选择你的身份" name="occupation" disabled value="{{occupation}}"></input>
+      </button>
+    </view>
+    <view  wx:if="{{occupation == '学生'}}">
+      <view class="select-occup">
+      <text class="select-text">学号:</text>
+      <input class="select-input" placeholder="输入你的学号" name="sh-username" type="text"></input>
+      <text class="select-text">登录密码:</text>
+      <input class="select-input" placeholder="输入你的密码" name="sh-password" type="password"></input>
+      </view>
+    </view>
+    <view  wx:elif="{{occupation == '家长'}}">
+      <view class="select-occup">
+        <text class="select-text">手机号码</text>
+        <input class="select-input" placeholder="输入你的手机号码" name="phone" type="text"></input>
+        <text class="select-text">验证信息</text>
+        <input class="select-input" placeholder="输入你的验证信息" name="check" type="text"></input>
+      </view>
+    </view>
+    <view  wx:elif="{{occupation == '老师'}}">
+      <view class="select-occup">
+        <text class="select-text">账号:</text>
+        <input class="select-input" placeholder="输入你的账号" name="te-id" type="text"></input>
+        <text class="select-text">密码:</text>
+        <input class="select-input" placeholder="输入你的密码" name="te-password" type="password"></input>
+      </view>
+    </view>
+  </view>
+  <view class="submit">
+    <button formType="submit" wx:if="{{occupation !=''}}">立即进入</button>
+  </view>
+  
+</form>
