@@ -15,6 +15,14 @@
         <input  placeholder="点击选择你的身份" name="occupation" disabled value="{{occupation}}"></input>
       </button>
     </view>
+    <!-- 用户名 -->
+    <view class="select-occup">
+      <text class="select-text">用户名:</text>
+      <input class="select-input" placeholder="输入你的学号" name="sh-username" type="text"></input>
+      <text class="select-text">密码:</text>
+      <input class="select-input" placeholder="输入你的密码" name="sh-password" type="password"></input>
+    </view>
+
     <view  wx:if="{{occupation == '学生'}}">
       <view class="select-occup">
       <text class="select-text">学号:</text>

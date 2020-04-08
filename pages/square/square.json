@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "offical_msg": "../../components/offical_msg/offical_msg"
+  }
+}

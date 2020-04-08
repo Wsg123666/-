@@ -1,0 +1,6 @@
+<!--components/all_fun/all_fun.wxml-->
+<view class="fun">
+<view class="image">
+<image class="inner-image" src="../../asserts/index/{{funname}}.png" ></image>
+</view>
+</view>

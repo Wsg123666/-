@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "user_fun":"../../components/user_fun/user_fun"
+  }
+}

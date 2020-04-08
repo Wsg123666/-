@@ -1,0 +1,23 @@
+/* pages/register/register.wxss */
+.input-out{
+  width: 80%;
+  margin-left: 10%;
+  display: inline-flex;
+  margin-bottom: 40rpx;
+}
+.input-type{
+ border: 1px solid;
+ width: 260rpx;
+ height: 60rpx;
+ font-size: 28rpx;
+ padding-left: 18rpx;
+ border-radius: 6px;
+}
+.input-text{
+  font-size: 36rpx;
+  line-height: 63rpx;
+  padding-right: 20rpx;
+  width: 200rpx;
+  /* border: 1px solid; */
+  text-align: right;
+}

@@ -1,0 +1,25 @@
+/* pages/square/square.wxss */
+.top{
+  width: 100%;
+}
+.top-func{
+  display: inline-flex;
+  width: 100%;
+  margin: 0px auto;
+}
+.top-text{
+  color: #777777;
+  font-size: 34rpx;
+  transition: all ease-in .2s;
+}
+.top-left{
+  margin-left: 40%;
+  margin-right: 20rpx;
+  border-right: 5rpx solid #eee;
+  padding-right: 20rpx;
+}
+.top-text-other{
+  font-weight: bold;
+  font-size: 32rpx;
+  color: #2A2A2A;
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "all_fun":"../../components/all_fun/all_fun",
+    "offical_msg":"../../components/offical_msg/offical_msg"
+  },
+  "navigationStyle":"custom",
+  "navigationBarTitleText": "首页"
+}

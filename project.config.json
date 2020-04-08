@@ -61,6 +61,41 @@
 					"id": -1,
 					"name": "pages/login/login",
 					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/user/user",
+					"pathName": "pages/user/user",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login_n/login_n",
+					"pathName": "pages/login_n/login_n",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/square/square",
+					"pathName": "pages/square/square",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/register/register",
+					"pathName": "pages/register/register",
 					"scene": null
 				}
 			]

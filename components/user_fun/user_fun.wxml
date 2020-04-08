@@ -1,0 +1,12 @@
+<!--components/user_fun/user_fun.wxml-->
+<view class="user_fun">
+  <view class="inner">
+    <view class="user_fun_left">
+      <image src="../../asserts/user/self.png" class="user_fun_left_img"></image>
+      <view class="user_fun_left_content">个人信息</view>
+    </view>
+    <view class="user_fun_right">
+        <image src="../../asserts/user/detail.png" class="user_fun_right_img"></image>
+      </view>
+  </view>
+</view>

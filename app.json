@@ -1,8 +1,33 @@
 {
   "pages": [
-    "pages/welcome/welcome",
-    "pages/login/login"
+    "pages/index/index",
+    "pages/register/register",
+    "pages/login/login",
+    "pages/login_n/login_n",
+    "pages/square/square",
+    "pages/user/user",
+    "pages/welcome/welcome"
   ],
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath":"./asserts/index/home.png",
+      "selectedIconPath":"./asserts/index/home.png",
+      "text": "首页"
+    },
+    {
+      "pagePath": "pages/square/square",
+      "iconPath": "./asserts/index/friend.png",
+      "selectedIconPath": "./asserts/index/friend.png",
+      "text": "圈子"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "iconPath": "./asserts/index/people.png",
+      "selectedIconPath": "./asserts/index/people.png",
+      "text": "个人"
+    }]
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

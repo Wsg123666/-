@@ -1,0 +1,18 @@
+/* components/all_fun/all_fun.wxss */
+.fun{
+  display: inline-flex;
+}
+.image{
+  margin: 20rpx 0rpx 0rpx 20rpx;
+  width: 105rpx;
+  height: 105rpx;
+  padding: 10rpx;
+  /* background-color: #eee; */
+  /* border: 1px solid #4095d7;  */
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 rgba(0,33,79,0.11),0 0 10px 0 rgba(0,33,79,0.11);
+}
+.inner-image{
+  width: 100rpx;
+  height: 100rpx;
+}

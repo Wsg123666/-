@@ -1,0 +1,12 @@
+<!--pages/square/square.wxml-->
+<view class="top">
+  <view class="top-func">
+    <view class='top-text top-left {{current==0 ? "top-text-other":""}}' bindtap="clickmsg">信息</view>
+    <view class='top-text top-right {{current==1 ? "top-text-other":""}}'  bindtap="clicksquare">广场</view>
+  </view>
+</view>
+<view>
+  <view wx:for="{{5}}" >
+    <offical_msg />
+  </view>
+</view>

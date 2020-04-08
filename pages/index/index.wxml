@@ -1,0 +1,21 @@
+<!--pages/index/index.wxml-->
+<view class="top">
+  <image src="../../asserts/login/logo.png" class="top-img" mode="widthFix"></image>
+  <text class="top-text">首页</text>
+</view>
+<view class="fun_out">
+  <view class="fun_place" wx:for="{{fun}}"  wx:key="{{index}}">
+    <all_fun funname="{{item}}" />
+  </view>
+</view>
+<view class="text">
+  <text class="inner_text">官方动态</text>
+</view>
+
+<view>
+<offical_msg />
+<offical_msg msg="{{all_msg}}"/>
+<offical_msg />
+<offical_msg />
+
+</view>

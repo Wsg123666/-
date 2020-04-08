@@ -1,0 +1,20 @@
+<!--pages/register/register.wxml-->
+<view class="out">
+  <view class="input-out">
+    <text class="input-text">学校:</text>
+    <input class="input-type" name="username" placeholder="输入你的学校"></input>
+  </view>
+  <view class="input-out">
+    <text class="input-text">用户名:</text>
+    <input class="input-type" name="username" placeholder="输入你的学校"></input>
+  </view>
+  <view class="input-out">
+    <text class="input-text">密码:</text>
+    <input class="input-type" name="username" placeholder="输入你的学校"></input>
+  </view>
+  <view class="input-out">
+    <text class="input-text">性别:</text>
+    <input class="input-type" name="username" placeholder="输入你的学校"></input>
+  </view>
+  
+</view>

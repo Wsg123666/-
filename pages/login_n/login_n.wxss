@@ -1,0 +1,206 @@
+/* pages/login_n/login_n.wxss */
+.logo{
+  width: 100%;
+}
+.logo-img{
+  width: 150rpx;
+  float: center;
+  margin: 20rpx 0rpx 20rpx 35%;
+  /* margin-left: 35%; */
+}
+.out{
+  width: 80%;
+  height: 1000rpx;
+  margin:12% auto;
+  /* border: 1px solid; */
+  box-shadow: 0 0 10px 0 rgba(0,33,79,0.11);
+}
+.select{
+  margin-top: 10rpx;
+  width: 100%;
+  height: 56rpx;
+  /* border: 1px solid; */
+  display: inline-flex;
+}
+.select-text{
+  font-size: 28rpx;
+  color: #777;
+  margin-left: 60rpx;
+  transition: all ease-in .2s;
+}
+.now{
+    font-weight: bold;
+    font-size: 32rpx;
+    color: #2A2A2A;
+}
+.select-line{
+  width: 100%;
+  height: 10rpx;
+  /* border: 1px solid; */
+  /* display: inline-flex; */
+}
+.select-line-one{
+  width: 70rpx;
+  height: 10rpx;
+  background-color: green;
+  margin-left: 56rpx;
+  float: left;
+  display: none;
+}
+.select-line-two{
+  width: 150rpx;
+  height: 10rpx;
+  background-color: green;
+  margin-left: 166rpx;
+  display: none;
+}
+.display-line{
+  display: block !important;
+}
+.login-account{
+  width: 100%;
+  display: none;
+  /* height: 500rpx; */
+  /* border: 1px solid; */
+}
+.login-stu{
+  width: 100%;
+  display: none;
+}
+/* .account{
+  position: absolute;
+  
+} */
+.account-left{
+  /* border: 1px solid; */
+  position: relative;
+  left: 98rpx;
+  top: 74rpx;
+  width: 36rpx;
+  height: 40rpx;
+  z-index: 9;
+}
+.account-left-img{
+  width: 36rpx;
+  height: 40rpx;
+}
+.input-account{
+    border: 1px solid #EDEDED;
+    width: 60%;
+    padding-left: 90rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 28rpx;
+    margin: 10rpx auto;
+}
+.login{
+  width: 80% !important;
+  margin-top: 60rpx;
+  background-color: green;
+}
+.checkbox{
+  margin-left: 61rpx;
+  /* margin-top: 20rpx; */
+}
+.checkbox-text{
+  font-size: 25rpx;
+}
+.login-other{
+  width: 84%;
+  height: 40rpx;
+  /* border: 1px solid; */
+  display: inline-flex;
+  margin: 20rpx auto;
+  margin-left: 61rpx;
+}
+.foget-password{
+  font-size: 22rpx;
+  color: #777;
+}
+.regester{
+  font-size: 22rpx;
+  margin-left: 68%;
+  color: #777;
+}
+.student-content{
+  width: 60%;
+  height: 130rpx;
+  position: absolute;
+  /* border: 1px solid; */
+  margin-left: 77rpx;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.21);
+  border-radius: 0 0 6px 6px;
+  z-index: 100;
+  display: none;
+  
+}
+.school{
+  height: 30rpx;
+  line-height: 30rpx;
+  padding: 12rpx 60rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+  color: #9798A9;
+}
+/* 用户未进行注册弹出 */
+.mask{
+  opacity: 0;
+}
+.modal{
+  width: 80%;
+  height: 500rpx;
+  box-shadow: 0px -1px 8px 0 rgba(0,0,0,0.21) ;
+  padding-top: 50rpx;
+  position: fixed;
+  margin: -116% 10%;
+  z-index: 1000;
+  background-color: white;
+}
+.modal-text{
+  font-size: 28rpx;
+  width: 100%;
+  text-align: center;
+  margin-left: 90rpx;
+}
+.modal-input{
+  width: 70%;
+  display: flex;
+  margin: 30rpx auto;
+}
+.input-text{
+  width: 130rpx;
+  text-align: right;
+  font-size: 28rpx;
+  border: 1px solid #EDEDED;
+  line-height: 56rpx;
+}
+.input-style{
+  border: 1px solid #EDEDED;
+  font-size: 28rpx;
+  padding-left: 10rpx;
+}
+.modal-over{
+  width: 75%;
+  margin: 0px auto;
+}
+.modal-cancel{
+  float: left;
+  color: white;
+  background-color: #3D84FF;
+  border-radius: 0px;
+}
+.modal-login{
+  float: right;
+  color: white;
+  background-color:#3D84FF;
+  border-radius: 0px;
+}
+.modal-finall{
+  font-size: 22rpx;
+  display: inline-block;
+  width: 90%;
+  color: #777;
+  margin-top: 40rpx;
+  margin-left: 10%;
+}

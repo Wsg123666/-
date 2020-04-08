@@ -1,0 +1,91 @@
+<!--pages/login_n/login_n.wxml-->
+<form bindsubmit="userlogin" class="mask">
+  <view class="out">
+    <view class="logo">
+      <image src="../../asserts/login/logo.png" class="logo-img" mode="widthFix"></image>
+    </view>
+    <view class="select">
+      <view class='select-text {{current==0 ? "now":""}}' bindtap="clickaccount">账号</view>
+      <view class='select-text {{current==1 ? "now":""}}' bindtap="clickstu">学号/工号</view>
+    </view>
+    <view class="select-line">
+      <view class='select-line-one {{current==0 ? "display-line":""}}'></view>
+      <view class='select-line-two {{current==1 ? "display-line":""}}'></view>
+    </view>
+    <view class='login-account {{current==0 ? "display-line":""}}'>
+
+      <view class="account">
+        <view class="account-left">
+          <image src="../../asserts/login/account.png" class="account-left-img"></image>
+        </view>
+        <input type="text" placeholder="输入你的账号" name="username" class="input-account"></input>
+      </view>
+
+      <view class="account">
+        <view class="account-left">
+          <image src="../../asserts/login/password.png" class="account-left-img"></image>
+        </view>
+        <input type="password" placeholder="输入你的密码" name="password" class="input-account"></input>
+      </view>
+
+    </view>
+    <view class='login-stu {{current==1 ? "display-line":""}}'>
+      <view class="account">
+        <view class="account-left">
+          <image src="../../asserts/login/student.png" class="account-left-img"></image>
+        </view>
+        <input type="text" value="{{school_value}}" name="school" placeholder="输入你的学校" class="input-account" bindfocus="selectschool" bindblur="disselectschool"></input>
+      </view>
+      <view class='student-content {{select_school==0 ? "display-line":"" }}'>
+        <view wx:for="{{school}}" class="school" wx:key="{{index}}" bindtap="clickschool" data-now="{{index}}">{{item}}</view>
+      </view>
+      <view class="account">
+        <view class="account-left">
+          <image src="../../asserts/login/account.png" class="account-left-img"></image>
+        </view>
+        <input type="text" placeholder="输入你的账号" name="schoolId" class="input-account"></input>
+      </view>
+
+      <view class="account">
+        <view class="account-left">
+          <image src="../../asserts/login/password.png" class="account-left-img"></image>
+        </view>
+        <input type="password" placeholder="输入你的密码" name="schoolpassword" class="input-account"></input>
+      </view>
+    </view>
+    <view class="login-botom">
+      <button class="login" form-type="submit">登录</button>
+      <view class="login-other">
+        <view class="foget-password">忘记密码</view>
+        <view class="regester">注册</view>
+      </view>
+      <checkbox value="同意用户协议" checked="True" class="checkbox">
+        <text class="checkbox-text">同意用户协议</text>
+      </checkbox>
+    </view>
+  </view>
+</form>
+<form bindsubmit="relogin">
+<view  class="modal" wx:if="{{showmodal}}">
+  <text class="modal-text">你是新用户,还没有进行设置，请设置</text>
+  <view class="modal-main">
+    <view class="modal-input">
+      <text class="input-text">用户名:</text>
+      <input class="input-style" name="username" placeholder="输入你的用户名"></input>
+    </view>
+    <view class="modal-input">
+      <text class="input-text">密码:</text>
+      <input class="input-style" name="password" placeholder="输入你的密码"></input>
+    </view>
+    <view class="modal-input">
+      <text class="input-text">手机号:</text>
+      <input class="input-style" name="phone" placeholder="输入你的手机号"></input>
+    </view>
+    <view class="modal-over">
+      <button size="mini" class="modal-cancel" bindtap="logincacel">取消</button>
+      <button size="mini" class="modal-login" form-type="submit">登录</button>
+    </view>
+  </view>
+  <text class="modal-finall">所设置用户名，密码均为本程序密码，之后可以登陆</text>
+</view>
+</form>

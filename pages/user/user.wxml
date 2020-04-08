@@ -1,0 +1,9 @@
+<!--pages/user/user.wxml-->
+<view class="user">
+  <view class="head"><open-data type="userAvatarUrl" ></open-data></view>
+  <view class="user_text" bindtap="checklogin">登录</view>
+</view>
+<view wx:for="{{5}}">
+  <user_fun />
+</view>
+

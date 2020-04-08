@@ -1,0 +1,16 @@
+<!--components/of_msg/offical_msg.wxml-->
+<view class="out_msg">
+  <view class="people_head">
+    <image src="{{msg[0]}}" class="head_img"></image>
+  </view>
+  <view class="people_detail">
+    <view class="detail_text">{{msg[1]}}</view>
+    <view class="detail_text">{{msg[2]}}</view>
+  </view>
+  <view class="msg"><text>{{msg[3]}}</text></view>
+  <view class="msg_bottom">
+    <view class="msg_bottom_see">观看:111 点赞:222</view>
+    <view class="msg_price"><image src="../../asserts/index/price.png" class="msg_price_img"></image></view>
+    <view class="msg_share"><image src="../../asserts/index/share.png" class="msg_share_img"></image></view>
+  </view>
+</view>
